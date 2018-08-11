@@ -19,11 +19,10 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)injected
+{
+    NSLog(@"I've been injected: %@", self);
+    self.view.backgroundColor = [UIColor redColor];
 }
-
 
 @end
